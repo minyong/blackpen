@@ -19,7 +19,7 @@ body {
 	font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     text-align: center;
-    line-height: 140%;
+    line-height:130%;
 }
 h1 {
 	font-size: 2rem;
@@ -40,7 +40,7 @@ nav {
 		width: 200px;
 		display: inline-block;
 		a:hover {
-			background-color: transparent;
+			background-color:transparent;
 		}
 		img, svg {
 			width: 100px;
@@ -61,7 +61,7 @@ nav {
 		}
 	}
 }
-#react-root {
+#__blaze-root {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 1rem 0 3rem 0;
