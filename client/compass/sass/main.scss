@@ -1,0 +1,72 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+a {
+	color: #333;
+	&:hover {
+		background-color: #eee;
+	}
+}
+* {
+	box-sizing:border-box;
+	padding: 0;
+}
+body {
+	font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 140%;
+}
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+section.content {
+	max-width: 1000px;
+	text-align: left;
+	padding: 2rem 1rem;
+	margin: 0 auto;
+}
+nav {
+	position:relative;
+	display:flex;
+	align-items:center;
+	justify-center:center;
+	.logo {
+		width: 200px;
+		display: inline-block;
+		a:hover {
+			background-color: transparent;
+		}
+		img, svg {
+			width: 100px;
+			height: auto;
+		    border: none;
+		}
+	}
+	ul {
+		position:absolute;
+		right: 0;
+		/*align-self:flex-end;*/
+		li {
+			display: inline-block;
+			padding: 0 15px;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
+#react-root {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 1rem 0 3rem 0;
+	p {
+		text-align: left;
+		padding: 1rem 0;
+	}
+}
