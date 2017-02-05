@@ -28,27 +28,40 @@ FlowRouter.route('/how-to-become-a-blackpen-critic', {
   }
 });
 
-Template.artwork.helpers({
+FlowRouter.route('/about-me', {
+  name: 'about-me',
+  action() {
+    BlazeLayout.render('mainlayout', {main: 'about-me'});
+  }
+});
+
+FlowRouter.route('/:title', {
+  name: 'artwork',
+  action() {
+    BlazeLayout.render('mainlayout', {main: 'home'});
+  }
+});
+
+Template.home.helpers({
   artworks() {
-  	//return "iiii";
     return Artworks.find({});
   }
 });
 
 //route artworks
 
-var artworkSection = FlowRouter.group({
-    prefix: "/artworks"
-});
+// var artworkSection = FlowRouter.group({
+//     prefix: "/artworks"
+// });
 
-artworkSection.route('/', {
-    action: function() {
-    	BlazeLayout.render('mainlayout', {main: 'artwork'});
-    }
-});
+// artworkSection.route('/', {
+//     action: function() {
+//     	BlazeLayout.render('mainlayout', {main: 'home'});
+//     }
+// });
 
-artworkSection.route('/:title', {
-  action: function() {
-    BlazeLayout.render("mainlayout", {main: "artwork"});
-  }
-});
+// artworkSection.route('/:title', {
+//   action: function() {
+//     BlazeLayout.render("mainlayout", {main: "artwork"});
+//   }
+// });

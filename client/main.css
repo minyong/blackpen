@@ -68,22 +68,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, compass/sass/main.scss */
+/* line 12, compass/sass/main.scss */
 a {
   color: #333;
 }
-/* line 10, compass/sass/main.scss */
+/* line 14, compass/sass/main.scss */
 a:hover {
   background-color: #eee;
 }
 
-/* line 14, compass/sass/main.scss */
+/* line 18, compass/sass/main.scss */
 * {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 18, compass/sass/main.scss */
+/* line 22, compass/sass/main.scss */
 body {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -91,65 +91,95 @@ body {
   line-height: 130%;
 }
 
-/* line 24, compass/sass/main.scss */
+/* line 28, compass/sass/main.scss */
 h1 {
   font-size: 2rem;
   text-align: center;
 }
 
-/* line 28, compass/sass/main.scss */
+/* line 32, compass/sass/main.scss */
 section.content {
   max-width: 1000px;
   text-align: left;
   padding: 2rem 1rem;
   margin: 0 auto;
 }
+@media (min-width: 0) and (max-width: 620px) {
+  /* line 32, compass/sass/main.scss */
+  section.content {
+    padding: 0.5rem 1rem;
+  }
+}
 
-/* line 34, compass/sass/main.scss */
+/* line 41, compass/sass/main.scss */
 nav {
   position: relative;
   display: flex;
   align-items: center;
   justify-center: center;
+  margin: 0 0 1rem 0;
 }
-/* line 39, compass/sass/main.scss */
+@media (min-width: 0) and (max-width: 620px) {
+  /* line 41, compass/sass/main.scss */
+  nav {
+    align-items: flex-start;
+  }
+}
+/* line 50, compass/sass/main.scss */
 nav .logo {
-  width: 200px;
+  width: 220px;
   display: inline-block;
+  border-right: 4px solid #fffafa;
 }
-/* line 42, compass/sass/main.scss */
+/* line 54, compass/sass/main.scss */
 nav .logo a:hover {
   background-color: transparent;
 }
-/* line 45, compass/sass/main.scss */
+/* line 57, compass/sass/main.scss */
 nav .logo img, nav .logo svg {
   width: 100px;
   height: auto;
   border: none;
 }
-/* line 51, compass/sass/main.scss */
+/* line 63, compass/sass/main.scss */
 nav ul {
   position: absolute;
   right: 0;
-  /*align-self:flex-end;*/
+  border-bottom: 4px solid #fffafa;
 }
-/* line 55, compass/sass/main.scss */
+@media (min-width: 0) and (max-width: 620px) {
+  /* line 63, compass/sass/main.scss */
+  nav ul {
+    position: relative;
+  }
+}
+/* line 70, compass/sass/main.scss */
 nav ul li {
   display: inline-block;
   padding: 0 15px;
+  line-height: 160%;
 }
-/* line 58, compass/sass/main.scss */
+/* line 74, compass/sass/main.scss */
 nav ul li a {
   text-decoration: none;
 }
+@media (min-width: 0) and (max-width: 620px) {
+  /* line 70, compass/sass/main.scss */
+  nav ul li {
+    display: block;
+    margin: 7px;
+    padding: 3px;
+    background-color: #eee;
+  }
+}
 
-/* line 64, compass/sass/main.scss */
+/* line 86, compass/sass/main.scss */
 #__blaze-root {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem 0 3rem 0;
 }
-/* line 68, compass/sass/main.scss */
+/* line 90, compass/sass/main.scss */
 #__blaze-root p {
   text-align: left;
   padding: 1rem 0;

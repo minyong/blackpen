@@ -1,1 +1,55 @@
+.gitignore_global file:
+$ open ~/.gitignore_global
+Then, paste the rules you obtained in the links from the first two categories into the file. Since I’m on a Mac and I use Sublime Text as my code editor, this is how my .gitignore_global file looks like:
+## Ignore Mac OS Stuff
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+## Ignore Sublime text stuff 
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
 node_modules/
+.sass-cache/
+.sass-cache/*
+**/.sass-cache
+**/.sass-cache/*
+.css.map
+**.css.map
