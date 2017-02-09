@@ -1,41 +1,38 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+/* Welcome to Compass. * In this file you should write your main styles. (or centralize your imports) * Import this file using the following HTML or equivalent:* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />*/
 @import "compass/reset";
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:400,600,700');
 @import "breakpoint";
 
-$tablet: 0 620px;
+$tablet:0 620px;
 
 a {
-	color: #333;
+	color:#333;
 	&:hover {
-		background-color: #eee;
+		background-color:#eee;
 	}
 }
 * {
 	box-sizing:border-box;
-	padding: 0;
+	padding:0;
 }
 body {
-	font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    text-align: center;
-    line-height:130%;
+	font-family:'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:15px;
+	text-align:center;
+	line-height:130%;
 }
 h1 {
-	font-size: 2rem;
-	text-align: center;
+	font-size:2rem;
+	text-align:center;
 }
 section.content {
-	max-width: 1000px;
-	text-align: left;
-	padding: 2rem 1rem;
-	margin: 0 auto;
+	max-width:1000px;
+	text-align:left;
+	padding:2rem 1rem;
+	margin:0 auto;
 	@include breakpoint($tablet) {
-		padding: 0.5rem 1rem;
+		padding:0.5rem 1rem;
 	}
 }
 nav {
@@ -46,18 +43,19 @@ nav {
 		align-items:flex-start;
 	}
 	justify-center:center;
-	margin: 0 0 1rem 0;
+	margin:0 0 1rem 0;
 	.logo {
-		width: 220px;
-		display: inline-block;
-		border-right: 4px solid #fffafa;
+		width:220px;
+		display:inline-block;
+		border-right:4px solid #fffafa;
+		border-bottom:4px solid #fffafa;
 		a:hover {
 			background-color:transparent;
 		}
 		img, svg {
-			width: 100px;
-			height: auto;
-		    border: none;
+			width:100px;
+			height:auto;
+			border:none;
 		}
 	}
 	ul {
@@ -65,30 +63,74 @@ nav {
 		@include breakpoint($tablet) {
 			position:relative;
 		}
-		right: 0;
-		border-bottom: 4px solid #fffafa;
+		right:0;
+		border-bottom:4px solid #fffafa;
 		li {
-			display: inline-block;
-			padding: 0 15px;
-			line-height: 160%;
+			display:inline-block;
+			padding:0 15px;
+			line-height:160%;
 			a {
-				text-decoration: none;
+				text-decoration:none;
 			}
 			@include breakpoint($tablet) {
 				display:block;
 				margin:7px;
-				padding: 3px;
-				background-color: #eee;
+				padding:3px;
+				background-color:#eee;
 			}
 		}
 	}
 }
 #__blaze-root {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 1rem 0 3rem 0;
+	max-width:1000px;
+	margin:0 auto;
+	padding:1rem 0 3rem 0;
 	p {
-		text-align: left;
-		padding: 1rem 0;
+		text-align:left;
+		padding:1rem 0;
 	}
+}
+audio {
+	cursor:pointer;
+	border:1px solid #999;
+	padding: 0.3rem 0;
+	margin:.8rem 0;
+	height:3rem;
+	&::-webkit-media-controls-play-button, &::-webkit-media-controls-timeline, &::-webkit-media-controls-volume-slider {
+		cursor:pointer;
+	}
+	&::-webkit-media-controls-panel {
+		background-color:#fff !important;
+	}
+}
+.artworkcontainer {
+	padding: 2rem 0;
+	img {
+		width:100%;
+		display:block;
+		border:none;
+		max-width:400px;
+		margin: 0 0 1.6rem 0;
+	}
+}
+.desktop-inline-block {
+	display:inline-block;
+	width: 400px;
+	padding: 0 20px 0 0;
+	@include breakpoint($tablet) {
+		display:block;
+		width: 100%;
+		padding: 0;
+	}
+}
+strong {
+	font-weight:700;
+}
+h1 {
+	margin: 4rem 0 1rem 0;
+	text-align:left;
+	font-family:'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	line-height:130%;
+	border-bottom:4px solid #fffafa;
 }

@@ -51,12 +51,48 @@
 
   <p>The Blackpen logo uses <a href="http://www.iranicaonline.org/uploads/files/siahqalam/siahqalam_fig_4.jpg" target="_blank">the techniques of gradient layers or folds that the 15-century artist used in his works.</a></p>
 
-  <p>Blackpen is founded and operated by Minyong Cho, and you can read more about her <a href="/about-me">here.</a></p>
+  <p>Blackpen is founded and operated by Minyong Cho, and you can hear more about her below.</p>
+
+      <audio controls>
+        <source src="/audio/Black Pen Minyong Cho About Me.mp3" type="audio/mpeg">
+        Or download it <a href="/audio/Black Pen Minyong Cho About Me.mp3" download="Black Pen Minyong Cho About Me">here.</a>
+      </audio>
+
 </template>
 
 <template name="home">
     {{#each artworks}}
-        {{body}}
+        <h1>{{pagetitle}}</h1>
+        <div class="artworkcontainer">
+            {{#if artist2}}
+                <div class="desktop-inline-block">
+                    <img src="/images/{{image1}}" />
+                    <strong>{{artworktitle1}}</strong>
+                    <p>
+                        {{artist1}}
+                        <br />
+                        {{date1}}
+                    </p>
+                </div>
+                <div class="desktop-inline-block">
+                    <img src="/images/{{image2}}" />
+                    <strong>{{artworktitle2}}</strong>
+                    <p>
+                        {{artist2}}
+                        <br />
+                        {{date2}}
+                    </p>
+                </div>
+            {{else}}
+                  <img src="/images/{{image1}}" />
+                  <strong>{{artworktitle1}}</strong>
+                  <p>
+                      {{artist1}}
+                      <br />
+                      {{date1}}
+                  </p>
+            {{/if}}
+        </div>
     {{/each}}
 </template>
 
@@ -74,19 +110,19 @@
 
     <p>Looking back as a middle-aged woman, I am proud of one accomplishment in my life -- I failed excellently.</p>
 
-    <p>I mean I reached far and leaped high from a low-class immigrant family with an unemployed alcoholic father who physically and verbally abused me all my childhood to the end of his being jailed for it and a mother who described to me her efforts to abort me because I was conceived out of wedlock and her resolution to stay married to my father regardless of his abuse. This might be a lot for some people to swallow in one sentence, but for me this was the only family I knew when I ran off to MIT to practically begin to learn to live without abuse, which I liken to drug withdrawal.</p>
+    <p>I mean I reached far and leaped high from a low-class immigrant family with an unemployed alcoholic father who physically and verbally abused me all my childhood to the end of his being jailed for it and a mother who described to me her efforts to abort me because I was conceived out of wedlock and her resolution to continually blame me for his abuse. This might be a lot for some people to swallow in one sentence, but for me this was the only family I knew when I ran off to MIT to practically begin to learn to live without their abuse, which I liken to drug withdrawal.</p>
 
-    <p>Then I fell down. With a BS from MIT, I failed to get a high-paying job as my sister did from graduating from UC Berkeley. I guess that’s what you are supposed to do if you come from a poor family, but I was more interested in studying art that I just saw on the trip around the world. Going to the University of Michigan for my PhD, however, signaled another way to a bright future. My getting married also promised a productive life -- a family I will build with my husband and a house we will buy and furnish. My family also relaxed a bit into forging a workable relationship with some communication and interactions back and forth.</p>
+    <p>Then I fell down. With a Bachelor's degree from MIT, I failed to get a high-paying job as my sister did from graduating from UC Berkeley. I guess that’s what you are supposed to do coming from a poor family, but I was much more interested in studying art that I just saw on the trip around the world. Going to the University of Michigan for my PhD, however, signaled another way to a bright future. My getting married also promised a productive life -- a family I will build with my husband and a house we will buy and furnish, with cars in the garage. My family, waking up to the fact that I was not a useless punch bag after all, saw the potential return on investment and relaxed a bit into forging a workable relationship with some communication back and forth.</p>
 
-    <p>So when I filed for a divorce, I was a successful graduate student, an academic, a wife, a daughter, a sister with more social ties than I’d ever had in my life. Nobody understood why I was leaving a happy marriage, but I I knew I had to make an end to all the successes in my life. From graduate school, I’ve gained art historical tools to examine my history more systemically, and I knew that a pretense of happiness was not good enough for me.  After divorce, I slowly stripped myself of all my roles, to finally leaving Academia shortly after finishing a postdoc at Harvard.</p> 
+    <p>So when I filed for a divorce, I was a successful academic, a wife, a daughter, a sister with more social ties than I’d ever had in my life. Nobody understood why I was leaving a happy marriage, but I I knew I had to put an end to all the successes in my life. From graduate school, I’ve gained art historical tools to examine my personal history more systemically, and I realized that a mere pretense of happiness was not good enough for me. After divorce, I slowly stripped myself of all my roles, to finally leaving Academia shortly after finishing a postdoc at Harvard.</p> 
 
     <p>That was six years ago.</p>
 
-    <p>Since then, I can confidently say I’ve found something I always wanted but never knew what it was because I didn’t have it.</p>
+    <p>Since then, I've carved out a place for myself in the world with my bare hands, and in the process I can confidently say I’ve found something I always wanted but never knew what it was because I didn’t have it.</p>
 
     <p>That is, I’m free.</p>
 
-    <p>I know from firsthand you have to fail to be free. Maybe I don’t know the sweetness of success or comfort of social ties, but I do know the unmodifiable assurance of freedom like cold crisp water on a hot day that I’d never exchange for anything else in the world.</p>
+    <p>I know firsthand you have to fail to be free. Maybe I don't fully understand the sweetness of success or comfort of social ties, but I could never be myself without the cool assurance of freedom that runs through my spine and that impels me to skinny-dip alone in an oasis that is in everyone else's mirage.</p>
 
     <p>Now I’m free to experiment. I can even talk about art without having anyone to listen.</p> 
 

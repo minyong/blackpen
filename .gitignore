@@ -1,6 +1,3 @@
-.gitignore_global file:
-$ open ~/.gitignore_global
-Then, paste the rules you obtained in the links from the first two categories into the file. Since I’m on a Mac and I use Sublime Text as my code editor, this is how my .gitignore_global file looks like:
 ## Ignore Mac OS Stuff
 .DS_Store
 .AppleDouble
