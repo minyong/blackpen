@@ -1,0 +1,7 @@
+{
+  "galaxy.meteor.com": { 
+     "env": { 
+       "MONGO_URL": "mongodb://myicicle:myc9612@ds149059.mlab.com:49059/myweb" 
+     } 
+   }
+}
