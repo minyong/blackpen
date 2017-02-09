@@ -24,6 +24,10 @@
       </ul>
      </nav>
      <main>{{> Template.dynamic template=main}}</main>
+     <footer>
+          <p>Copyright &copy; 2017 Blackpen</p>
+          <p><a href="/privacy-policy">Privacy Policy</a></p>
+     </footer>
   </section>
 </template>
 
@@ -34,15 +38,14 @@
     </div>
 </template>
 
-<!-- <template name="artwork">
-
-    {{#each artworks}}
-      {{body}}
-    {{/each}}
-
-</template> -->
+<template name="privacy-policy">
+    <p><strong>Privacy Policy</strong></p>
+    <p>We do not share or sell the information or material you provide to blackpen.org with a third party. When Blackpen decides to publish your comments or voice recordings, we will ask for your permission and will only publish them on blackpen.org and will not give permission to other websites to publish them.
+    </p>
+</template>
 
 <template name="about">
+  <p><strong>About Blackpen</strong></p>
   <p>Blackpen began as a way to promote visual art appreciation among casual art critics with or without professional training, called blackpen critics. It invites anyone to submit writings about any artworks to be recorded and published on this website.</p>
 
   <p>Blackpen's approach is rarely a study of the artist's biography or the social contexts in which the artworks were made. Rather, Blackpen encourages art appreciation from the viewer's perspective, how the art form interacts with the viewer's personal context at the moment.</p> 
@@ -60,9 +63,15 @@
 
 </template>
 
-<template name="home">
+<template name="artwork">
     {{#each artworks}}
-        <h1>{{pagetitle}}</h1>
+        <div class="artworkpage">
+            <h1>{{pagetitle}}</h1> 
+            <audio controls>
+                <source src="/audio/{{pagetitle}}.mp3" type="audio/mpeg">
+                Or download it <a href="/audio/{{pagetitle}}.mp3" download="{{pagetitle}}">here.</a>
+            </audio>
+        </div>
         <div class="artworkcontainer">
             {{#if artist2}}
                 <div class="desktop-inline-block">
@@ -96,13 +105,60 @@
     {{/each}}
 </template>
 
+<template name="home">
+    {{#each artworks}}
+        <a href="/{{title}}">
+        <div class="home-inline-block">
+            <div class="homepage">
+                <p><strong>{{pagetitle}}</strong></p>
+                <audio controls>
+                    <source src="/audio/{{pagetitle}}.mp3" type="audio/mpeg">
+                    Or download it <a href="/audio/{{pagetitle}}.mp3" download="{{pagetitle}}">here.</a>
+                </audio>
+            </div>
+            <div class="homecontainer">
+                {{#if artist2}}
+                    <div class="inline-block">
+                        <img src="/images/{{image1}}" />
+                        <strong>{{artworktitle1}}</strong>
+                        <p>
+                            {{artist1}}
+                            <br />
+                            {{date1}}
+                        </p>
+                    </div>
+                    <div class="inline-block">
+                        <img src="/images/{{image2}}" />
+                        <strong>{{artworktitle2}}</strong>
+                        <p>
+                            {{artist2}}
+                            <br />
+                            {{date2}}
+                        </p>
+                    </div>
+                {{else}}
+                      <img src="/images/{{image1}}" />
+                      <strong>{{artworktitle1}}</strong>
+                      <p>
+                          {{artist1}}
+                          <br />
+                          {{date1}}
+                      </p>
+                {{/if}}
+            </div>
+        </div>
+      </a>
+    {{/each}}
+</template>
+
 
 <template name="become">
+    <p><strong>How to Become a Blackpen Critic</strong></p>
     <p>You are invited to submit any writing on an artwork you find meaningful to you. Black pen is not seeking art historical studies that delve into the artists’ biographies or manifestoes, although if you do submit such studies, they might be published without having it evaluated by your peer scholars. In that sense, Blackpen does not require you to situate the artworks in their contemporary contextual settings and does not encourage you to conduct research to learn the historical meanings of the artworks. Rather, we want your personal story of why you find an artwork meaningful in your own settings, thereby contextualizing it within your own life experiences. Blackpen celebrates visual art’s place in our everyday life and its enrichment of our life experiences.</p>
 
     <p>When submitting your writing, please include one picture that you have taken yourself of the artwork, so as not to infringe upon any other photographers’ copywrights. You will be notified by email within a week if the submission is accepted, and, if accepted, you will be asked if you would like to record your writing yourself or would like one of us to read it out loud for the final recording to be published on blackpen.org.</p>
 
-    <p>(share buttons on the post)</p>
+    <p>Please email your submission to <a href="mailto:info@blackpen.org">info@blackpen.org</a></p>
 </template>
 
 <template name="about-me">

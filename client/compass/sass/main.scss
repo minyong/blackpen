@@ -5,6 +5,8 @@
 @import "breakpoint";
 
 $tablet:0 620px;
+$phone:0 480px;
+$medium: 620px;
 
 a {
 	color:#333;
@@ -90,6 +92,9 @@ nav {
 		padding:1rem 0;
 	}
 }
+main {
+	padding: 1rem 0 2rem 0;
+}
 audio {
 	cursor:pointer;
 	border:1px solid #999;
@@ -112,15 +117,45 @@ audio {
 		max-width:400px;
 		margin: 0 0 1.6rem 0;
 	}
+	.desktop-inline-block {
+		@include breakpoint($medium) {
+		    width: 48%;
+		    padding: 0 3rem 0 0;
+		}
+	}
+}
+.homecontainer {
+	img {
+		width:100%;
+		display:block;
+		border:none;
+		max-width:175px;
+		margin: 0 0 1.6rem 0;
+	}
+	.inline-block {
+		vertical-align: top;
+		display:inline-block;
+		width: 49%;
+		max-width: 200px;
+	    padding: 0 1rem 0 0;
+	}
+}
+.home-inline-block {
+	display: inline-block;
+	max-width: 450px;
+	background-color:#eee;
+	padding: 1rem 0 1rem 1rem;
 }
 .desktop-inline-block {
+	vertical-align: top;
 	display:inline-block;
-	width: 400px;
-	padding: 0 20px 0 0;
 	@include breakpoint($tablet) {
+		padding: 0 1rem 2rem 0;
+	}
+	@include breakpoint($phone) {
 		display:block;
 		width: 100%;
-		padding: 0;
+		padding: 0 0 2rem 0;
 	}
 }
 strong {
@@ -132,5 +167,35 @@ h1 {
 	font-family:'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	line-height:130%;
+}
+.artworkpage {
 	border-bottom:4px solid #fffafa;
+	h1, audio {
+		display:inline-block;
+		margin: 1rem 2rem 1rem 0;
+		vertical-align: top;
+	}
+	
+}
+.homepage {
+	p, audio {
+		display:inline-block;
+		vertical-align: top;
+		margin: 0 0 1rem 0;
+	}
+	p {
+		font-family:'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 1.2rem;
+		margin: 0 1rem 0 0;
+		@include breakpoint($phone) {
+			margin: 0;
+		}
+	}
+}
+footer {
+	border-top:8px solid #fffafa;
+	padding: 1rem 0;
+	p {
+		text-align: center !important;
+	}
 }

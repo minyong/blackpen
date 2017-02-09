@@ -35,14 +35,27 @@ FlowRouter.route('/about-me', {
   }
 });
 
+FlowRouter.route('/privacy-policy', {
+  name: 'privacy-policy',
+  action() {
+    BlazeLayout.render('mainlayout', {main: 'privacy-policy'});
+  }
+});
+
 FlowRouter.route('/:title', {
   name: 'artwork',
   action() {
-    BlazeLayout.render('mainlayout', {main: 'home'});
+    BlazeLayout.render('mainlayout', {main: 'artwork'});
   }
 });
 
 Template.home.helpers({
+  artworks() {
+    return Artworks.find({});
+  }
+});
+
+Template.artwork.helpers({
   artworks() {
     return Artworks.find({});
   }
