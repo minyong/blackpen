@@ -226,7 +226,11 @@ audio::-webkit-media-controls-panel {
   }
 }
 
-/* line 128, compass/sass/main.scss */
+/* line 127, compass/sass/main.scss */
+.homecontainer {
+  text-align: center;
+}
+/* line 129, compass/sass/main.scss */
 .homecontainer img {
   width: 100%;
   display: block;
@@ -234,36 +238,37 @@ audio::-webkit-media-controls-panel {
   max-width: 175px;
   margin: 0 0 1.6rem 0;
 }
-/* line 135, compass/sass/main.scss */
+/* line 136, compass/sass/main.scss */
 .homecontainer .inline-block {
   vertical-align: top;
   display: inline-block;
   width: 49%;
   max-width: 200px;
   padding: 0 1rem 0 0;
+  text-align: left;
 }
 
-/* line 143, compass/sass/main.scss */
+/* line 145, compass/sass/main.scss */
 .home-inline-block {
   display: inline-block;
-  max-width: 450px;
+  max-width: 465px;
   background-color: #eee;
   padding: 1rem 0 1rem 1rem;
 }
 
-/* line 149, compass/sass/main.scss */
+/* line 151, compass/sass/main.scss */
 .desktop-inline-block {
   vertical-align: top;
   display: inline-block;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 149, compass/sass/main.scss */
+  /* line 151, compass/sass/main.scss */
   .desktop-inline-block {
     padding: 0 1rem 2rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 149, compass/sass/main.scss */
+  /* line 151, compass/sass/main.scss */
   .desktop-inline-block {
     display: block;
     width: 100%;
@@ -271,12 +276,12 @@ audio::-webkit-media-controls-panel {
   }
 }
 
-/* line 161, compass/sass/main.scss */
+/* line 163, compass/sass/main.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 164, compass/sass/main.scss */
+/* line 166, compass/sass/main.scss */
 h1 {
   margin: 4rem 0 1rem 0;
   text-align: left;
@@ -285,42 +290,41 @@ h1 {
   line-height: 130%;
 }
 
-/* line 171, compass/sass/main.scss */
+/* line 173, compass/sass/main.scss */
 .artworkpage {
   border-bottom: 4px solid #fffafa;
 }
-/* line 173, compass/sass/main.scss */
+/* line 175, compass/sass/main.scss */
 .artworkpage h1, .artworkpage audio {
   display: inline-block;
   margin: 1rem 2rem 1rem 0;
   vertical-align: top;
 }
 
-/* line 181, compass/sass/main.scss */
+/* line 183, compass/sass/main.scss */
 .homepage p, .homepage audio {
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 1rem 0;
+  margin: 0 1rem 1rem 0;
 }
-/* line 186, compass/sass/main.scss */
+/* line 188, compass/sass/main.scss */
 .homepage p {
   font-family: 'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
-  margin: 0 1rem 0 0;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 186, compass/sass/main.scss */
+  /* line 188, compass/sass/main.scss */
   .homepage p {
     margin: 0;
   }
 }
 
-/* line 195, compass/sass/main.scss */
+/* line 196, compass/sass/main.scss */
 footer {
   border-top: 8px solid #fffafa;
   padding: 1rem 0;
 }
-/* line 198, compass/sass/main.scss */
+/* line 199, compass/sass/main.scss */
 footer p {
   text-align: center !important;
 }
