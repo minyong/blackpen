@@ -174,7 +174,7 @@ nav ul li a {
 
 /* line 86, compass/sass/main.scss */
 #__blaze-root {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 0 3rem 0;
 }
@@ -190,6 +190,17 @@ main {
 }
 
 /* line 98, compass/sass/main.scss */
+.homelink {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 20px 0;
+}
+/* line 102, compass/sass/main.scss */
+.homelink:nth-of-type(2n+1) {
+  margin: 0 20px 20px 0;
+}
+
+/* line 106, compass/sass/main.scss */
 audio {
   cursor: pointer;
   border: 1px solid #999;
@@ -197,20 +208,20 @@ audio {
   margin: .8rem 0;
   height: 3rem;
 }
-/* line 104, compass/sass/main.scss */
+/* line 112, compass/sass/main.scss */
 audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-timeline, audio::-webkit-media-controls-volume-slider {
   cursor: pointer;
 }
-/* line 107, compass/sass/main.scss */
+/* line 115, compass/sass/main.scss */
 audio::-webkit-media-controls-panel {
   background-color: #fff !important;
 }
 
-/* line 111, compass/sass/main.scss */
+/* line 119, compass/sass/main.scss */
 .artworkcontainer {
   padding: 2rem 0;
 }
-/* line 113, compass/sass/main.scss */
+/* line 121, compass/sass/main.scss */
 .artworkcontainer img {
   width: 100%;
   display: block;
@@ -219,26 +230,36 @@ audio::-webkit-media-controls-panel {
   margin: 0 0 1.6rem 0;
 }
 @media (min-width: 620px) {
-  /* line 120, compass/sass/main.scss */
+  /* line 128, compass/sass/main.scss */
   .artworkcontainer .desktop-inline-block {
     width: 48%;
     padding: 0 3rem 0 0;
   }
 }
 
-/* line 127, compass/sass/main.scss */
+/* line 135, compass/sass/main.scss */
 .homecontainer {
-  text-align: center;
+  text-align: left;
 }
-/* line 129, compass/sass/main.scss */
-.homecontainer img {
+/* line 137, compass/sass/main.scss */
+.homecontainer img.oneimage {
   width: 100%;
   display: block;
   border: none;
-  max-width: 175px;
-  margin: 0 0 1.6rem 0;
+  margin: 0 auto 1.6rem auto;
+  max-width: 200px;
 }
-/* line 136, compass/sass/main.scss */
+/* line 144, compass/sass/main.scss */
+.homecontainer img.twoimages {
+  max-width: 175px;
+}
+@media (min-width: 620px) {
+  /* line 144, compass/sass/main.scss */
+  .homecontainer img.twoimages {
+    margin: 0 1rem 1.6rem 1rem;
+  }
+}
+/* line 150, compass/sass/main.scss */
 .homecontainer .inline-block {
   vertical-align: top;
   display: inline-block;
@@ -248,27 +269,27 @@ audio::-webkit-media-controls-panel {
   text-align: left;
 }
 
-/* line 145, compass/sass/main.scss */
+/* line 159, compass/sass/main.scss */
 .home-inline-block {
   display: inline-block;
-  max-width: 465px;
+  max-width: 480px;
   background-color: #eee;
   padding: 1rem 0 1rem 1rem;
 }
 
-/* line 151, compass/sass/main.scss */
+/* line 165, compass/sass/main.scss */
 .desktop-inline-block {
   vertical-align: top;
   display: inline-block;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 151, compass/sass/main.scss */
+  /* line 165, compass/sass/main.scss */
   .desktop-inline-block {
     padding: 0 1rem 2rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 151, compass/sass/main.scss */
+  /* line 165, compass/sass/main.scss */
   .desktop-inline-block {
     display: block;
     width: 100%;
@@ -276,12 +297,12 @@ audio::-webkit-media-controls-panel {
   }
 }
 
-/* line 163, compass/sass/main.scss */
+/* line 177, compass/sass/main.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 166, compass/sass/main.scss */
+/* line 180, compass/sass/main.scss */
 h1 {
   margin: 4rem 0 1rem 0;
   text-align: left;
@@ -290,41 +311,41 @@ h1 {
   line-height: 130%;
 }
 
-/* line 173, compass/sass/main.scss */
+/* line 187, compass/sass/main.scss */
 .artworkpage {
   border-bottom: 4px solid #fffafa;
 }
-/* line 175, compass/sass/main.scss */
+/* line 189, compass/sass/main.scss */
 .artworkpage h1, .artworkpage audio {
   display: inline-block;
   margin: 1rem 2rem 1rem 0;
   vertical-align: top;
 }
 
-/* line 183, compass/sass/main.scss */
+/* line 197, compass/sass/main.scss */
 .homepage p, .homepage audio {
   display: inline-block;
   vertical-align: top;
   margin: 0 1rem 1rem 0;
 }
-/* line 188, compass/sass/main.scss */
+/* line 202, compass/sass/main.scss */
 .homepage p {
   font-family: 'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 188, compass/sass/main.scss */
+  /* line 202, compass/sass/main.scss */
   .homepage p {
     margin: 0;
   }
 }
 
-/* line 196, compass/sass/main.scss */
+/* line 210, compass/sass/main.scss */
 footer {
   border-top: 8px solid #fffafa;
   padding: 1rem 0;
 }
-/* line 199, compass/sass/main.scss */
+/* line 213, compass/sass/main.scss */
 footer p {
   text-align: center !important;
 }

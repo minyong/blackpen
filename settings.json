@@ -1,6 +1,7 @@
 {
   "galaxy.meteor.com": { 
      "env": { 
+       "ROOT_URL": "http://www.blackpen.org",
        "MONGO_URL": "mongodb://myicicle:myc9612@ds149059.mlab.com:49059/myweb" 
      } 
    }

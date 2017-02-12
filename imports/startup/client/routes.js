@@ -56,8 +56,10 @@ Template.home.helpers({
 });
 
 Template.artwork.helpers({
-  artworks() {
-    return Artworks.find({});
+  artwork: function() {
+    var artworktitle = FlowRouter.getParam('title');
+    var artwork = Artworks.findOne({title: artworktitle}) || {};
+    return artwork;
   }
 });
 

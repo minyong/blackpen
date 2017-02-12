@@ -25,7 +25,7 @@
      </nav>
      <main>{{> Template.dynamic template=main}}</main>
      <footer>
-          <p>Copyright &copy; 2017 Blackpen</p>
+          <p>&copy; 2017 Blackpen.org</p>
           <p><a href="/privacy-policy">Privacy Policy</a></p>
      </footer>
   </section>
@@ -40,7 +40,7 @@
 
 <template name="privacy-policy">
     <p><strong>Privacy Policy</strong></p>
-    <p>We do not share or sell the information or material you provide to blackpen.org with a third party. When Blackpen decides to publish your comments or voice recordings, we will ask for your permission and will only publish them on blackpen.org and will not give permission to other websites to publish them.
+    <p>We do not share or sell the information or material you provide to blackpen.org with a third party. When Blackpen decides to publish your comments or voice recordings, we will ask for your permission and will only publish them on blackpen.org.
     </p>
 </template>
 
@@ -64,50 +64,48 @@
 </template>
 
 <template name="artwork">
-    {{#each artworks}}
-        <div class="artworkpage">
-            <h1>{{pagetitle}}</h1> 
-            <audio controls>
-                <source src="/audio/{{pagetitle}}.mp3" type="audio/mpeg">
-                Or download it <a href="/audio/{{pagetitle}}.mp3" download="{{pagetitle}}">here.</a>
-            </audio>
-        </div>
-        <div class="artworkcontainer">
-            {{#if artist2}}
-                <div class="desktop-inline-block">
-                    <img src="/images/{{image1}}" />
-                    <strong>{{artworktitle1}}</strong>
-                    <p>
-                        {{artist1}}
-                        <br />
-                        {{date1}}
-                    </p>
-                </div>
-                <div class="desktop-inline-block">
-                    <img src="/images/{{image2}}" />
-                    <strong>{{artworktitle2}}</strong>
-                    <p>
-                        {{artist2}}
-                        <br />
-                        {{date2}}
-                    </p>
-                </div>
-            {{else}}
-                  <img src="/images/{{image1}}" />
-                  <strong>{{artworktitle1}}</strong>
-                  <p>
-                      {{artist1}}
-                      <br />
-                      {{date1}}
-                  </p>
-            {{/if}}
-        </div>
-    {{/each}}
+    <div class="artworkpage">
+        <h1>{{artwork.pagetitle}}</h1> 
+        <audio controls>
+            <source src="/audio/{{artwork.pagetitle}}.mp3" type="audio/mpeg">
+            Or download it <a href="/audio/{{artwork.pagetitle}}.mp3" download="{{artwork.pagetitle}}">here.</a>
+        </audio>
+    </div>
+    <div class="artworkcontainer">
+        {{#if artwork.artist2}}
+            <div class="desktop-inline-block">
+                <img src="/images/{{artwork.image1}}" />
+                <strong>{{artwork.artworktitle1}}</strong>
+                <p>
+                    {{artwork.artist1}}
+                    <br />
+                    {{artwork.date1}}
+                </p>
+            </div>
+            <div class="desktop-inline-block">
+                <img src="/images/{{artwork.image2}}" />
+                <strong>{{artworktitle2}}</strong>
+                <p>
+                    {{artwork.artist2}}
+                    <br />
+                    {{artwork.date2}}
+                </p>
+            </div>
+        {{else}}
+              <img src="/images/{{artwork.image1}}" />
+              <strong>{{artwork.artworktitle1}}</strong>
+              <p>
+                  {{artwork.artist1}}
+                  <br />
+                  {{artwork.date1}}
+              </p>
+        {{/if}}
+    </div>
 </template>
 
 <template name="home">
     {{#each artworks}}
-        <a href="/{{title}}">
+        <a href="/{{title}}" class="homelink">
         <div class="home-inline-block">
             <div class="homepage">
                 <p><strong>{{pagetitle}}</strong></p>
@@ -119,7 +117,7 @@
             <div class="homecontainer">
                 {{#if artist2}}
                     <div class="inline-block">
-                        <img src="/images/{{image1}}" />
+                        <img src="/images/{{image1}}" class="twoimages"/>
                         <strong>{{artworktitle1}}</strong>
                         <p>
                             {{artist1}}
@@ -128,7 +126,7 @@
                         </p>
                     </div>
                     <div class="inline-block">
-                        <img src="/images/{{image2}}" />
+                        <img src="/images/{{image2}}" class="twoimages"/>
                         <strong>{{artworktitle2}}</strong>
                         <p>
                             {{artist2}}
@@ -137,7 +135,7 @@
                         </p>
                     </div>
                 {{else}}
-                      <img src="/images/{{image1}}" />
+                      <img src="/images/{{image1}}" class="oneimage"/>
                       <strong>{{artworktitle1}}</strong>
                       <p>
                           {{artist1}}
