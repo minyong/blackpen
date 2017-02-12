@@ -51,7 +51,7 @@ FlowRouter.route('/:title', {
 
 Template.home.helpers({
   artworks() {
-    return Artworks.find({});
+    return Artworks.find({}, {sort: {visitdate: 1}});
   }
 });
 

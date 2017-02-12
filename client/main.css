@@ -1,5 +1,5 @@
 /* Welcome to Compass. * In this file you should write your main styles. (or centralize your imports) * Import this file using the following HTML or equivalent:* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />*/
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:400,600,700");
 /* line 5, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
@@ -82,6 +82,11 @@ a:hover {
 }
 
 /* line 21, compass/sass/main.scss */
+em {
+  font-style: italic;
+}
+
+/* line 24, compass/sass/main.scss */
 body {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -89,13 +94,13 @@ body {
   line-height: 130%;
 }
 
-/* line 27, compass/sass/main.scss */
+/* line 30, compass/sass/main.scss */
 h1 {
   font-size: 2rem;
   text-align: center;
 }
 
-/* line 31, compass/sass/main.scss */
+/* line 34, compass/sass/main.scss */
 section.content {
   max-width: 1000px;
   text-align: left;
@@ -103,13 +108,13 @@ section.content {
   margin: 0 auto;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 31, compass/sass/main.scss */
+  /* line 34, compass/sass/main.scss */
   section.content {
     padding: 0.5rem 1rem;
   }
 }
 
-/* line 40, compass/sass/main.scss */
+/* line 43, compass/sass/main.scss */
 nav {
   position: relative;
   display: flex;
@@ -118,52 +123,52 @@ nav {
   margin: 0 0 1rem 0;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 40, compass/sass/main.scss */
+  /* line 43, compass/sass/main.scss */
   nav {
     align-items: flex-start;
   }
 }
-/* line 49, compass/sass/main.scss */
+/* line 52, compass/sass/main.scss */
 nav .logo {
   width: 220px;
   display: inline-block;
   border-right: 4px solid #fffafa;
   border-bottom: 4px solid #fffafa;
 }
-/* line 54, compass/sass/main.scss */
+/* line 57, compass/sass/main.scss */
 nav .logo a:hover {
   background-color: transparent;
 }
-/* line 57, compass/sass/main.scss */
+/* line 60, compass/sass/main.scss */
 nav .logo img, nav .logo svg {
   width: 100px;
   height: auto;
   border: none;
 }
-/* line 63, compass/sass/main.scss */
+/* line 66, compass/sass/main.scss */
 nav ul {
   position: absolute;
   right: 0;
   border-bottom: 4px solid #fffafa;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 63, compass/sass/main.scss */
+  /* line 66, compass/sass/main.scss */
   nav ul {
     position: relative;
   }
 }
-/* line 70, compass/sass/main.scss */
+/* line 73, compass/sass/main.scss */
 nav ul li {
   display: inline-block;
   padding: 0 15px;
   line-height: 160%;
 }
-/* line 74, compass/sass/main.scss */
+/* line 77, compass/sass/main.scss */
 nav ul li a {
   text-decoration: none;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 70, compass/sass/main.scss */
+  /* line 73, compass/sass/main.scss */
   nav ul li {
     display: block;
     margin: 7px;
@@ -172,37 +177,37 @@ nav ul li a {
   }
 }
 
-/* line 86, compass/sass/main.scss */
+/* line 89, compass/sass/main.scss */
 #__blaze-root {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 0 3rem 0;
 }
-/* line 90, compass/sass/main.scss */
+/* line 93, compass/sass/main.scss */
 #__blaze-root p {
   text-align: left;
   padding: 1rem 0;
 }
 
-/* line 95, compass/sass/main.scss */
+/* line 98, compass/sass/main.scss */
 main {
   padding: 1rem 0 2rem 0;
 }
 
-/* line 98, compass/sass/main.scss */
+/* line 101, compass/sass/main.scss */
 .homelink {
   display: inline-block;
   vertical-align: top;
   margin: 0 0 20px 0;
 }
 @media (min-width: 620px) {
-  /* line 103, compass/sass/main.scss */
+  /* line 106, compass/sass/main.scss */
   .homelink:nth-of-type(2n+1) {
     margin: 0 20px 20px 0;
   }
 }
 
-/* line 108, compass/sass/main.scss */
+/* line 111, compass/sass/main.scss */
 audio {
   cursor: pointer;
   border: 1px solid #999;
@@ -210,20 +215,20 @@ audio {
   margin: .8rem 0;
   height: 3rem;
 }
-/* line 114, compass/sass/main.scss */
+/* line 117, compass/sass/main.scss */
 audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-timeline, audio::-webkit-media-controls-volume-slider {
   cursor: pointer;
 }
-/* line 117, compass/sass/main.scss */
+/* line 120, compass/sass/main.scss */
 audio::-webkit-media-controls-panel {
   background-color: #fff !important;
 }
 
-/* line 121, compass/sass/main.scss */
+/* line 124, compass/sass/main.scss */
 .artworkcontainer {
   padding: 2rem 0;
 }
-/* line 123, compass/sass/main.scss */
+/* line 126, compass/sass/main.scss */
 .artworkcontainer img {
   width: 100%;
   display: block;
@@ -232,39 +237,39 @@ audio::-webkit-media-controls-panel {
   margin: 0 0 1.6rem 0;
 }
 @media (min-width: 620px) {
-  /* line 130, compass/sass/main.scss */
+  /* line 133, compass/sass/main.scss */
   .artworkcontainer .desktop-inline-block {
     width: 48%;
     padding: 0 3rem 0 0;
   }
 }
 
-/* line 137, compass/sass/main.scss */
+/* line 140, compass/sass/main.scss */
 .homecontainer {
   text-align: left;
 }
-/* line 139, compass/sass/main.scss */
+/* line 142, compass/sass/main.scss */
 .homecontainer img {
   width: 100%;
   display: block;
   border: none;
   margin: 0 auto 1.6rem auto;
 }
-/* line 145, compass/sass/main.scss */
+/* line 148, compass/sass/main.scss */
 .homecontainer img.oneimage {
   max-width: 200px;
 }
-/* line 148, compass/sass/main.scss */
+/* line 151, compass/sass/main.scss */
 .homecontainer img.twoimages {
   max-width: 175px;
 }
 @media (min-width: 620px) {
-  /* line 148, compass/sass/main.scss */
+  /* line 151, compass/sass/main.scss */
   .homecontainer img.twoimages {
     margin: 0 1rem 1.6rem 1rem;
   }
 }
-/* line 154, compass/sass/main.scss */
+/* line 157, compass/sass/main.scss */
 .homecontainer .inline-block {
   vertical-align: top;
   display: inline-block;
@@ -274,7 +279,7 @@ audio::-webkit-media-controls-panel {
   text-align: left;
 }
 
-/* line 163, compass/sass/main.scss */
+/* line 166, compass/sass/main.scss */
 .home-inline-block {
   display: inline-block;
   max-width: 480px;
@@ -282,19 +287,19 @@ audio::-webkit-media-controls-panel {
   padding: 1rem 0 1rem 1rem;
 }
 
-/* line 169, compass/sass/main.scss */
+/* line 172, compass/sass/main.scss */
 .desktop-inline-block {
   vertical-align: top;
   display: inline-block;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 169, compass/sass/main.scss */
+  /* line 172, compass/sass/main.scss */
   .desktop-inline-block {
     padding: 0 1rem 2rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 169, compass/sass/main.scss */
+  /* line 172, compass/sass/main.scss */
   .desktop-inline-block {
     display: block;
     width: 100%;
@@ -302,12 +307,12 @@ audio::-webkit-media-controls-panel {
   }
 }
 
-/* line 181, compass/sass/main.scss */
+/* line 184, compass/sass/main.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 184, compass/sass/main.scss */
+/* line 187, compass/sass/main.scss */
 h1 {
   margin: 4rem 0 1rem 0;
   text-align: left;
@@ -316,41 +321,41 @@ h1 {
   line-height: 130%;
 }
 
-/* line 191, compass/sass/main.scss */
+/* line 194, compass/sass/main.scss */
 .artworkpage {
   border-bottom: 4px solid #fffafa;
 }
-/* line 193, compass/sass/main.scss */
+/* line 196, compass/sass/main.scss */
 .artworkpage h1, .artworkpage audio {
   display: inline-block;
   margin: 1rem 2rem 1rem 0;
   vertical-align: top;
 }
 
-/* line 201, compass/sass/main.scss */
+/* line 204, compass/sass/main.scss */
 .homepage p, .homepage audio {
   display: inline-block;
   vertical-align: top;
   margin: 0 1rem 1rem 0;
 }
-/* line 206, compass/sass/main.scss */
+/* line 209, compass/sass/main.scss */
 .homepage p {
   font-family: 'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 206, compass/sass/main.scss */
+  /* line 209, compass/sass/main.scss */
   .homepage p {
     margin: 0;
   }
 }
 
-/* line 214, compass/sass/main.scss */
+/* line 217, compass/sass/main.scss */
 footer {
   border-top: 8px solid #fffafa;
   padding: 1rem 0;
 }
-/* line 217, compass/sass/main.scss */
+/* line 220, compass/sass/main.scss */
 footer p {
   text-align: center !important;
 }
