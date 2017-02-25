@@ -159,7 +159,10 @@ audio {
 		display:inline-block;
 		width: 49%;
 		max-width: 200px;
-	    padding: 0 1rem 0 0;
+		&:first-of-type {
+			padding: 0 1rem 0 0;
+		}
+	    padding: 0;
 	    text-align: left;
 	}
 }
@@ -167,7 +170,7 @@ audio {
 	display: inline-block;
 	max-width: 480px;
 	background-color:#eee;
-	padding: 1rem 0 1rem 1rem;
+	padding: 1rem;
 }
 .desktop-inline-block {
 	vertical-align: top;
@@ -219,5 +222,15 @@ footer {
 	padding: 1rem 0;
 	p {
 		text-align: center !important;
+	}
+}
+.pool-by-jihyeon-lee-at-society-of-illustrators {
+	.homecontainer img.oneimage {
+		max-width: 370px;
+	}
+}
+.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock {
+	.homecontainer img.oneimage {
+		max-width:100%;
 	}
 }

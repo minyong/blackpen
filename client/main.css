@@ -275,31 +275,35 @@ audio::-webkit-media-controls-panel {
   display: inline-block;
   width: 49%;
   max-width: 200px;
-  padding: 0 1rem 0 0;
+  padding: 0;
   text-align: left;
 }
+/* line 162, compass/sass/main.scss */
+.homecontainer .inline-block:first-of-type {
+  padding: 0 1rem 0 0;
+}
 
-/* line 166, compass/sass/main.scss */
+/* line 169, compass/sass/main.scss */
 .home-inline-block {
   display: inline-block;
   max-width: 480px;
   background-color: #eee;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
 }
 
-/* line 172, compass/sass/main.scss */
+/* line 175, compass/sass/main.scss */
 .desktop-inline-block {
   vertical-align: top;
   display: inline-block;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 172, compass/sass/main.scss */
+  /* line 175, compass/sass/main.scss */
   .desktop-inline-block {
     padding: 0 1rem 2rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 172, compass/sass/main.scss */
+  /* line 175, compass/sass/main.scss */
   .desktop-inline-block {
     display: block;
     width: 100%;
@@ -307,12 +311,12 @@ audio::-webkit-media-controls-panel {
   }
 }
 
-/* line 184, compass/sass/main.scss */
+/* line 187, compass/sass/main.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 187, compass/sass/main.scss */
+/* line 190, compass/sass/main.scss */
 h1 {
   margin: 4rem 0 1rem 0;
   text-align: left;
@@ -321,41 +325,51 @@ h1 {
   line-height: 130%;
 }
 
-/* line 194, compass/sass/main.scss */
+/* line 197, compass/sass/main.scss */
 .artworkpage {
   border-bottom: 4px solid #fffafa;
 }
-/* line 196, compass/sass/main.scss */
+/* line 199, compass/sass/main.scss */
 .artworkpage h1, .artworkpage audio {
   display: inline-block;
   margin: 1rem 2rem 1rem 0;
   vertical-align: top;
 }
 
-/* line 204, compass/sass/main.scss */
+/* line 207, compass/sass/main.scss */
 .homepage p, .homepage audio {
   display: inline-block;
   vertical-align: top;
   margin: 0 1rem 1rem 0;
 }
-/* line 209, compass/sass/main.scss */
+/* line 212, compass/sass/main.scss */
 .homepage p {
   font-family: 'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 209, compass/sass/main.scss */
+  /* line 212, compass/sass/main.scss */
   .homepage p {
     margin: 0;
   }
 }
 
-/* line 217, compass/sass/main.scss */
+/* line 220, compass/sass/main.scss */
 footer {
   border-top: 8px solid #fffafa;
   padding: 1rem 0;
 }
-/* line 220, compass/sass/main.scss */
+/* line 223, compass/sass/main.scss */
 footer p {
   text-align: center !important;
+}
+
+/* line 228, compass/sass/main.scss */
+.pool-by-jihyeon-lee-at-society-of-illustrators .homecontainer img.oneimage {
+  max-width: 370px;
+}
+
+/* line 233, compass/sass/main.scss */
+.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock .homecontainer img.oneimage {
+  max-width: 100%;
 }
