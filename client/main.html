@@ -1,5 +1,5 @@
 <head>
-    <title>Black Pen by Minyong Cho</title>
+    <title>Blackpen Art Diary</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,11 +71,11 @@
             Or download it <a href="/audio/{{artwork.pagetitle}}.mp3" download="{{artwork.pagetitle}}">here.</a>
         </audio>
     </div>
-    <div class="artworkcontainer">
+    <div class="artworkcontainer {{artwork.title}}">
         {{#if artwork.artist2}}
             <div class="desktop-inline-block">
                 <img src="/images/{{artwork.image1}}" />
-                <strong>{{artwork.artworktitle1}}</strong>
+                <a href="{{artwork.link1}}" target="_blank">{{artwork.artworktitle1}}</a>
                 <p>
                     {{artwork.artist1}}
                     <br />
@@ -84,7 +84,7 @@
             </div>
             <div class="desktop-inline-block">
                 <img src="/images/{{artwork.image2}}" />
-                <strong>{{artworktitle2}}</strong>
+                <a href="{{artwork.link2}}" target="_blank">{{artwork.artworktitle2}}</a>
                 <p>
                     {{artwork.artist2}}
                     <br />
@@ -92,13 +92,16 @@
                 </p>
             </div>
         {{else}}
-              <img src="/images/{{artwork.image1}}" />
-              <strong>{{artwork.artworktitle1}}</strong>
-              <p>
-                  {{artwork.artist1}}
-                  <br />
-                  {{artwork.date1}}
-              </p>
+            <img src="/images/{{artwork.image1}}" />
+            {{#if artwork.image2}}
+              <img src="/images/{{artwork.image2}}" />
+            {{/if}}
+            <a href="{{artwork.link1}}" target="_blank">{{artwork.artworktitle1}}</a>
+            <p>
+                {{artwork.artist1}}
+                <br />
+                {{artwork.date1}}
+            </p>
         {{/if}}
     </div>
 </template>

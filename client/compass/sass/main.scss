@@ -136,6 +136,10 @@ audio {
 		    padding: 0 3rem 0 0;
 		}
 	}
+	a {
+		font-weight: bold;
+		text-decoration: none;
+	}
 }
 .homecontainer {
 	text-align:left;
@@ -232,5 +236,10 @@ footer {
 .mimesis-by-dawit-l-petros-at-center-for-photography-woodstock {
 	.homecontainer img.oneimage {
 		max-width:100%;
+	}
+}
+.artworkcontainer.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock, .artworkcontainer.pool-by-jihyeon-lee-at-society-of-illustrators {
+	img {
+		max-width: 100%;
 	}
 }
