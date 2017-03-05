@@ -63,6 +63,33 @@ Template.artwork.helpers({
   }
 });
 
+let imgCount;
+let imgTally = 0;
+
+Template.artwork.onRendered(function () {
+  this.autorun(() => {
+    if (this.subscriptionsReady()) {
+      Tracker.afterFlush(() => {
+        imgCount = this.$('img').length;
+      });
+    }
+  });
+});
+
+Template.artwork.events({
+  'load img': function (event, template) {
+    if (++imgTally >= imgCount) {
+      (template.view.template.imagesLoaded.bind(template))();
+    }
+  }
+});
+
+Template.artwork.imagesLoaded = function () {
+  $(document).ready(function(){
+    $(this).scrollTop(0);
+  });
+};
+
 //route artworks
 
 // var artworkSection = FlowRouter.group({
