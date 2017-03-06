@@ -28,13 +28,6 @@ FlowRouter.route('/how-to-become-a-blackpen-critic', {
   }
 });
 
-FlowRouter.route('/about-me', {
-  name: 'about-me',
-  action() {
-    BlazeLayout.render('mainlayout', {main: 'about-me'});
-  }
-});
-
 FlowRouter.route('/privacy-policy', {
   name: 'privacy-policy',
   action() {
