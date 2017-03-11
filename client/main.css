@@ -291,7 +291,7 @@ audio::-webkit-media-controls-panel {
 /* line 173, compass/sass/main.scss */
 .home-inline-block {
   display: inline-block;
-  max-width: 480px;
+  max-width: 472px;
   background-color: #eee;
   padding: 1rem;
 }
@@ -375,11 +375,11 @@ footer p {
 }
 
 /* line 237, compass/sass/main.scss */
-.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock .homecontainer img.oneimage {
+.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock .homecontainer img.oneimage, .heat-maps-by-richard-mosse-at-jack-shainman-gallery .homecontainer img.oneimage {
   max-width: 100%;
 }
 
-/* line 242, compass/sass/main.scss */
-.artworkcontainer.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock img, .artworkcontainer.pool-by-jihyeon-lee-at-society-of-illustrators img {
+/* line 243, compass/sass/main.scss */
+.artworkcontainer.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock img, .artworkcontainer.pool-by-jihyeon-lee-at-society-of-illustrators img, .artworkcontainer.heat-maps-by-richard-mosse-at-jack-shainman-gallery img {
   max-width: 100%;
 }
