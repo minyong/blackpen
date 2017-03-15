@@ -66,27 +66,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 11, compass/sass/main.scss */
+/* line 14, compass/sass/main.scss */
 a {
   color: #333;
 }
-/* line 13, compass/sass/main.scss */
+/* line 16, compass/sass/main.scss */
 a:hover {
   background-color: #eee;
 }
 
-/* line 17, compass/sass/main.scss */
+/* line 20, compass/sass/main.scss */
 * {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 21, compass/sass/main.scss */
+/* line 24, compass/sass/main.scss */
 em {
   font-style: italic;
 }
 
-/* line 24, compass/sass/main.scss */
+/* line 27, compass/sass/main.scss */
 body {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -94,13 +94,13 @@ body {
   line-height: 130%;
 }
 
-/* line 30, compass/sass/main.scss */
+/* line 33, compass/sass/main.scss */
 h1 {
   font-size: 2rem;
   text-align: center;
 }
 
-/* line 34, compass/sass/main.scss */
+/* line 37, compass/sass/main.scss */
 section.content {
   max-width: 1000px;
   text-align: left;
@@ -108,13 +108,13 @@ section.content {
   margin: 0 auto;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 34, compass/sass/main.scss */
+  /* line 37, compass/sass/main.scss */
   section.content {
     padding: 0.5rem 1rem;
   }
 }
 
-/* line 43, compass/sass/main.scss */
+/* line 46, compass/sass/main.scss */
 nav {
   position: relative;
   display: flex;
@@ -123,52 +123,52 @@ nav {
   margin: 0 0 1rem 0;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 43, compass/sass/main.scss */
+  /* line 46, compass/sass/main.scss */
   nav {
     align-items: flex-start;
   }
 }
-/* line 52, compass/sass/main.scss */
+/* line 55, compass/sass/main.scss */
 nav .logo {
   width: 220px;
   display: inline-block;
   border-right: 4px solid #fffafa;
   border-bottom: 4px solid #fffafa;
 }
-/* line 57, compass/sass/main.scss */
+/* line 60, compass/sass/main.scss */
 nav .logo a:hover {
   background-color: transparent;
 }
-/* line 60, compass/sass/main.scss */
+/* line 63, compass/sass/main.scss */
 nav .logo img, nav .logo svg {
   width: 100px;
   height: auto;
   border: none;
 }
-/* line 66, compass/sass/main.scss */
+/* line 69, compass/sass/main.scss */
 nav ul {
   position: absolute;
   right: 0;
   border-bottom: 4px solid #fffafa;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 66, compass/sass/main.scss */
+  /* line 69, compass/sass/main.scss */
   nav ul {
     position: relative;
   }
 }
-/* line 73, compass/sass/main.scss */
+/* line 76, compass/sass/main.scss */
 nav ul li {
   display: inline-block;
   padding: 0 15px;
   line-height: 160%;
 }
-/* line 77, compass/sass/main.scss */
+/* line 80, compass/sass/main.scss */
 nav ul li a {
   text-decoration: none;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 73, compass/sass/main.scss */
+  /* line 76, compass/sass/main.scss */
   nav ul li {
     display: block;
     margin: 7px;
@@ -177,37 +177,37 @@ nav ul li a {
   }
 }
 
-/* line 89, compass/sass/main.scss */
+/* line 92, compass/sass/main.scss */
 #__blaze-root {
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 0 3rem 0;
 }
-/* line 93, compass/sass/main.scss */
+/* line 96, compass/sass/main.scss */
 #__blaze-root p {
   text-align: left;
   padding: 1rem 0;
 }
 
-/* line 98, compass/sass/main.scss */
+/* line 101, compass/sass/main.scss */
 main {
   padding: 1rem 0 2rem 0;
 }
 
-/* line 101, compass/sass/main.scss */
+/* line 104, compass/sass/main.scss */
 .homelink {
   display: inline-block;
   vertical-align: top;
   margin: 0 0 20px 0;
 }
 @media (min-width: 620px) {
-  /* line 106, compass/sass/main.scss */
+  /* line 109, compass/sass/main.scss */
   .homelink:nth-of-type(2n+1) {
     margin: 0 20px 20px 0;
   }
 }
 
-/* line 111, compass/sass/main.scss */
+/* line 114, compass/sass/main.scss */
 audio {
   cursor: pointer;
   border: 1px solid #999;
@@ -215,20 +215,20 @@ audio {
   margin: .8rem 0;
   height: 3rem;
 }
-/* line 117, compass/sass/main.scss */
+/* line 120, compass/sass/main.scss */
 audio::-webkit-media-controls-play-button, audio::-webkit-media-controls-timeline, audio::-webkit-media-controls-volume-slider {
   cursor: pointer;
 }
-/* line 120, compass/sass/main.scss */
+/* line 123, compass/sass/main.scss */
 audio::-webkit-media-controls-panel {
   background-color: #fff !important;
 }
 
-/* line 124, compass/sass/main.scss */
+/* line 127, compass/sass/main.scss */
 .artworkcontainer {
   padding: 2rem 0;
 }
-/* line 126, compass/sass/main.scss */
+/* line 129, compass/sass/main.scss */
 .artworkcontainer img {
   width: 100%;
   display: block;
@@ -237,44 +237,44 @@ audio::-webkit-media-controls-panel {
   margin: 0 0 1.6rem 0;
 }
 @media (min-width: 620px) {
-  /* line 133, compass/sass/main.scss */
+  /* line 136, compass/sass/main.scss */
   .artworkcontainer .desktop-inline-block {
     width: 48%;
     padding: 0 3rem 0 0;
   }
 }
-/* line 139, compass/sass/main.scss */
+/* line 142, compass/sass/main.scss */
 .artworkcontainer a {
   font-weight: bold;
   text-decoration: none;
 }
 
-/* line 144, compass/sass/main.scss */
+/* line 147, compass/sass/main.scss */
 .homecontainer {
   text-align: left;
 }
-/* line 146, compass/sass/main.scss */
+/* line 149, compass/sass/main.scss */
 .homecontainer img {
   width: 100%;
   display: block;
   border: none;
   margin: 0 auto 1.6rem auto;
 }
-/* line 152, compass/sass/main.scss */
+/* line 155, compass/sass/main.scss */
 .homecontainer img.oneimage {
   max-width: 200px;
 }
-/* line 155, compass/sass/main.scss */
+/* line 158, compass/sass/main.scss */
 .homecontainer img.twoimages {
   max-width: 175px;
 }
 @media (min-width: 620px) {
-  /* line 155, compass/sass/main.scss */
+  /* line 158, compass/sass/main.scss */
   .homecontainer img.twoimages {
     margin: 0 1rem 1.6rem 1rem;
   }
 }
-/* line 161, compass/sass/main.scss */
+/* line 164, compass/sass/main.scss */
 .homecontainer .inline-block {
   vertical-align: top;
   display: inline-block;
@@ -283,12 +283,30 @@ audio::-webkit-media-controls-panel {
   padding: 0;
   text-align: left;
 }
-/* line 166, compass/sass/main.scss */
+/* line 169, compass/sass/main.scss */
 .homecontainer .inline-block:first-of-type {
   padding: 0 1rem 0 0;
 }
+/* line 171, compass/sass/main.scss */
+.homecontainer .inline-block:first-of-type p::after {
+  display: none;
+}
+/* line 178, compass/sass/main.scss */
+.homecontainer p::after {
+  content: "+";
+  border: 2px solid #999;
+  height: 20px;
+  width: 20px;
+  float: right;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  color: #999;
+  text-align: center;
+  font-size: 20px;
+}
 
-/* line 173, compass/sass/main.scss */
+/* line 190, compass/sass/main.scss */
 .home-inline-block {
   display: inline-block;
   max-width: 472px;
@@ -296,19 +314,19 @@ audio::-webkit-media-controls-panel {
   padding: 1rem;
 }
 
-/* line 179, compass/sass/main.scss */
+/* line 196, compass/sass/main.scss */
 .desktop-inline-block {
   vertical-align: top;
   display: inline-block;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 179, compass/sass/main.scss */
+  /* line 196, compass/sass/main.scss */
   .desktop-inline-block {
     padding: 0 1rem 2rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 179, compass/sass/main.scss */
+  /* line 196, compass/sass/main.scss */
   .desktop-inline-block {
     display: block;
     width: 100%;
@@ -316,12 +334,12 @@ audio::-webkit-media-controls-panel {
   }
 }
 
-/* line 191, compass/sass/main.scss */
+/* line 208, compass/sass/main.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 194, compass/sass/main.scss */
+/* line 211, compass/sass/main.scss */
 h1 {
   margin: 4rem 0 1rem 0;
   text-align: left;
@@ -330,56 +348,96 @@ h1 {
   line-height: 130%;
 }
 
-/* line 201, compass/sass/main.scss */
+/* line 218, compass/sass/main.scss */
 .artworkpage {
   border-bottom: 4px solid #fffafa;
 }
-/* line 203, compass/sass/main.scss */
+/* line 220, compass/sass/main.scss */
 .artworkpage h1, .artworkpage audio {
   display: inline-block;
   margin: 1rem 2rem 1rem 0;
   vertical-align: top;
 }
 
-/* line 211, compass/sass/main.scss */
+/* line 228, compass/sass/main.scss */
 .homepage p, .homepage audio {
   display: inline-block;
   vertical-align: top;
   margin: 0 1rem 1rem 0;
 }
-/* line 216, compass/sass/main.scss */
+/* line 233, compass/sass/main.scss */
 .homepage p {
   font-family: 'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 216, compass/sass/main.scss */
+  /* line 233, compass/sass/main.scss */
   .homepage p {
     margin: 0;
   }
 }
 
-/* line 224, compass/sass/main.scss */
+/* line 241, compass/sass/main.scss */
 footer {
   border-top: 8px solid #fffafa;
   padding: 1rem 0;
 }
-/* line 227, compass/sass/main.scss */
+/* line 244, compass/sass/main.scss */
 footer p {
   text-align: center !important;
 }
 
-/* line 232, compass/sass/main.scss */
+/* line 249, compass/sass/main.scss */
 .pool-by-jihyeon-lee-at-society-of-illustrators .homecontainer img.oneimage {
   max-width: 370px;
 }
 
-/* line 237, compass/sass/main.scss */
+/* line 254, compass/sass/main.scss */
 .mimesis-by-dawit-l-petros-at-center-for-photography-woodstock .homecontainer img.oneimage, .heat-maps-by-richard-mosse-at-jack-shainman-gallery .homecontainer img.oneimage {
   max-width: 100%;
 }
 
-/* line 243, compass/sass/main.scss */
+/* line 260, compass/sass/main.scss */
+.the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
+  content: "";
+  background: url("images/old-man-and-youth.jpg");
+  height: 53px;
+  width: 210px;
+  padding: 25%;
+  float: left;
+  background-position: center 500px;
+  margin: 0 1rem 1.6rem 0;
+}
+@media (min-width: 0) and (max-width: 620px) {
+  /* line 260, compass/sass/main.scss */
+  .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
+    width: 180px;
+  }
+}
+@media (min-width: 400px) and (max-width: 450px) {
+  /* line 260, compass/sass/main.scss */
+  .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
+    width: 166px;
+    margin: 0 0 1.6rem 0;
+  }
+}
+@media (min-width: 0) and (max-width: 400px) {
+  /* line 260, compass/sass/main.scss */
+  .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
+    width: 140px;
+    margin: 0 0 1.6rem 0;
+  }
+}
+/* line 281, compass/sass/main.scss */
+.the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer img.oneimage {
+  display: none;
+}
+
+/* line 288, compass/sass/main.scss */
 .artworkcontainer.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock img, .artworkcontainer.pool-by-jihyeon-lee-at-society-of-illustrators img, .artworkcontainer.heat-maps-by-richard-mosse-at-jack-shainman-gallery img {
   max-width: 100%;
+}
+/* line 293, compass/sass/main.scss */
+.artworkcontainer.the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art img {
+  max-width: 600px;
 }
