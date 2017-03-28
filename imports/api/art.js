@@ -4,7 +4,7 @@ import { Mongo } from 'meteor/mongo';
 export const Artworks = new Mongo.Collection('artworks');
 
 //Artworks.remove({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum-of-art"});
-//Artworks.remove({_id: Artworks.findOne({title: "the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art"})._id});
+//Artworks.remove({_id: Artworks.findOne({title: "untitled-by-dan-flavin-at-dia-beacon"})._id});
 
 visitdate1 = Date.parse("December 28, 2016");
 visitdate2 = Date.parse("January 1, 2017");
@@ -20,6 +20,6 @@ visitdate7 = Date.parse("October 1, 2016");
 //Artworks.update({title: "mimesis-by-dawit-l-petros-at-center-for-photography-woodstock"}, {$addToSet: {pagetitle: "Barn Becoming", visitdate: visitdate4, image1: "barn-becoming.jpg", artworktitle1: 'Mimesis', link1: 'http://www.dawitlpetros.com/', artist1: "Dawit L Petros", date1: "2007", landing: "I lie with a man under a barn."}}, {upsert: true} );
 //Artworks.update({title: "heat-maps-by-richard-mosse-at-jack-shainman-gallery"}, {$addToSet: {pagetitle: "Refugee in February", visitdate: visitdate5, image1: "heatmap1.jpg", image2: "heatmap2.jpg", artworktitle1: 'Heat Maps (Tempelhof Interior)', link1: 'http://www.richardmosse.com/', artist1: "Richard Mosse", date1: "2016", landing: "The refugee in the Nazi airport connects with me through his body heat."}}, {upsert: true} );
 //Artworks.update({title: "the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art"}, {$addToSet: {pagetitle: "Lithe Fruiterer", visitdate: visitdate6, image1: "old-man-and-youth.jpg", artworktitle1: 'The Old Man and the Youth', link1: 'http://www.metmuseum.org/art/collection/search/447798', artist1: "Riza Abbasi", date1: "17th century", landing: "I now understand the ubiquitous topos of an old man falling in love with a youth in Persian painting."}}, {upsert: true} );
-//Artworks.update({title: "untitled-by-dan-flavin-at-dia-beacon"}, {$addToSet: {pagetitle: "Spatial Dia", visitdate: visitdate7, image1: "spatial-dia.jpg", artworktitle1: 'Untitled (to you, Heiner, with admiration and affection)', link1: 'http://www.diaart.org/program/exhibitions-projects/dan-flavin-collection-display', artist1: "Dan Flavin", date1: "1974", landing: "Dia:Beacon's monumental artworks define space anew."}}, {upsert: true} );
+//Artworks.update({title: "untitled-by-fred-sandback-at-dia-beacon"}, {$addToSet: {pagetitle: "Spatial Dia", visitdate: visitdate7, image1: "spatial-dia.jpg", artworktitle1: 'Untitled (from Ten Vertical Constructions [rust red variation])', link1: 'http://www.diaart.org/collection/collection/sandback-fred-untitled-from-ten-vertical-constructions-rust-red-variation-197779-2014-003-1-2', artist1: "Fred Sandback, All artwork by Fred Sandback © 2017 Fred Sandback Archive", date1: "1977-79", landing: "Dia:Beacon's monumental artworks define space anew."}}, {upsert: true} );
 
 //console.log(Artworks.findOne({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum-of-art"}));

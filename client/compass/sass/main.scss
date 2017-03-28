@@ -255,11 +255,6 @@ footer {
 		max-width:100%;
 	}
 }
-.untitled-by-dan-flavin-at-dia-beacon {
-	.homecontainer img.oneimage {
-		max-width:320px;
-	}
-}
 .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art {
 	.homecontainer {
 		&::before {
@@ -289,7 +284,7 @@ footer {
 	}
 }
 .artworkcontainer {
-	&.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock, &.pool-by-jihyeon-lee-at-society-of-illustrators, &.heat-maps-by-richard-mosse-at-jack-shainman-gallery, &.untitled-by-dan-flavin-at-dia-beacon {
+	&.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock, &.pool-by-jihyeon-lee-at-society-of-illustrators, &.heat-maps-by-richard-mosse-at-jack-shainman-gallery, &.untitled-by-fred-sandback-at-dia-beacon {
 		img {
 			max-width: 100%;
 		}
