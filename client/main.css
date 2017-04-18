@@ -388,16 +388,31 @@ footer p {
 }
 
 /* line 249, compass/sass/main.scss */
+.rsvp-by-senga-nengudi-at-studio-museum .homecontainer img.oneimage {
+  max-width: 215px;
+}
+
+/* line 254, compass/sass/main.scss */
+.dome-of-rock-at-jerusalem .homecontainer img.oneimage {
+  max-width: 275px;
+}
+
+/* line 259, compass/sass/main.scss */
 .pool-by-jihyeon-lee-at-society-of-illustrators .homecontainer img.oneimage {
   max-width: 370px;
 }
 
-/* line 254, compass/sass/main.scss */
+/* line 264, compass/sass/main.scss */
+.mit .homecontainer img.oneimage {
+  max-width: 400px;
+}
+
+/* line 269, compass/sass/main.scss */
 .mimesis-by-dawit-l-petros-at-center-for-photography-woodstock .homecontainer img.oneimage, .heat-maps-by-richard-mosse-at-jack-shainman-gallery .homecontainer img.oneimage {
   max-width: 100%;
 }
 
-/* line 260, compass/sass/main.scss */
+/* line 275, compass/sass/main.scss */
 .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
   content: "";
   background: url("images/old-man-and-youth.jpg");
@@ -409,35 +424,35 @@ footer p {
   margin: 0 1rem 1.6rem 0;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 260, compass/sass/main.scss */
+  /* line 275, compass/sass/main.scss */
   .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
     width: 180px;
   }
 }
 @media (min-width: 400px) and (max-width: 450px) {
-  /* line 260, compass/sass/main.scss */
+  /* line 275, compass/sass/main.scss */
   .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
     width: 166px;
     margin: 0 0 1.6rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 400px) {
-  /* line 260, compass/sass/main.scss */
+  /* line 275, compass/sass/main.scss */
   .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
     width: 144px;
     margin: 0 0 1.6rem 0;
   }
 }
-/* line 281, compass/sass/main.scss */
+/* line 296, compass/sass/main.scss */
 .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer img.oneimage {
   display: none;
 }
 
-/* line 288, compass/sass/main.scss */
-.artworkcontainer.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock img, .artworkcontainer.pool-by-jihyeon-lee-at-society-of-illustrators img, .artworkcontainer.heat-maps-by-richard-mosse-at-jack-shainman-gallery img, .artworkcontainer.untitled-by-fred-sandback-at-dia-beacon img {
+/* line 303, compass/sass/main.scss */
+.artworkcontainer.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock img, .artworkcontainer.pool-by-jihyeon-lee-at-society-of-illustrators img, .artworkcontainer.heat-maps-by-richard-mosse-at-jack-shainman-gallery img, .artworkcontainer.untitled-by-fred-sandback-at-dia-beacon img, .artworkcontainer.rsvp-by-senga-nengudi-at-studio-museum img {
   max-width: 100%;
 }
-/* line 293, compass/sass/main.scss */
-.artworkcontainer.the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art img {
+/* line 308, compass/sass/main.scss */
+.artworkcontainer.the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art img, .artworkcontainer.mit img {
   max-width: 600px;
 }
