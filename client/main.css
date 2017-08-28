@@ -403,7 +403,7 @@ footer p {
 }
 
 /* line 264, compass/sass/main.scss */
-.mit .homecontainer img.oneimage {
+.mit .homecontainer img.oneimage, .yield-point-by-aki-sasamoto-at-the-kitchen .homecontainer img.oneimage {
   max-width: 400px;
 }
 

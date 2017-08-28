@@ -1,3 +1,4 @@
+
 import { Mongo } from 'meteor/mongo';
 
 
@@ -15,7 +16,9 @@ export const Artworks = new Mongo.Collection('artworks');
 // visitdate7 = Date.parse("October 1, 2016");
 //visitdate8 = Date.parse("April 2, 2017");
 //visitdate9 = Date.parse("April 12, 2017");
-visitdate10 = Date.parse("April 17, 2017");
+//visitdate10 = Date.parse("April 17, 2017");
+//visitdate11 = Date.parse("May 6, 2017");
+visitdate12 = Date.parse("August 17, 2017");
 
 //Artworks.update({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum"}, {$addToSet: {pagetitle: "Burnt Identity", visitdate: visitdate1, image1: "ici-on-creve.jpg", image2: "figure-of-mother-and-child.jpg", artworktitle1: 'Ici on crève (\"We\'re Dying Here\")', link1: 'https://www.brooklynmuseum.org/opencollection/objects/210261', artworktitle2: 'Figure of Mother and Child (Phemba)', link2: 'https://www.brooklynmuseum.org/opencollection/objects/2948', artist1: "Aimé Mpane", artist2: 'Kongo people (Yombe subgroup)', date1: "2006-2008", date2: "19th century", landing: "Brooklyn Museum's portraits from Africa ask me questions about my identity."}}, {upsert: true} );
 //Artworks.update({title: "menace-by-zeev-willy-neumann-at-saugerties-ny"}, {$addToSet: {pagetitle: "Home", visitdate: visitdate2, image1: "menace.jpg", artworktitle1: 'Menace', link1: 'http://zwneumann.tumblr.com/menace', artist1: "Ze'ev Willy Neumann", date1: "2014", landing: "There is no place like home"}}, {upsert: true} );
@@ -27,6 +30,8 @@ visitdate10 = Date.parse("April 17, 2017");
 //Artworks.update({title: "rsvp-by-senga-nengudi-at-studio-museum"}, {$addToSet: {pagetitle: "Harlem Stockings", visitdate: visitdate8, image1: "harlem-stockings.jpg", artworktitle1: 'R.S.V.P.', link1: 'http://www.diaart.org/collection/collection/sandback-fred-untitled-from-ten-vertical-constructions-rust-red-variation-197779-2014-003-1-2', artist1: "Senga Nengudi", date1: "1976", landing: "Stockings in Harlem brings art historical awakening of black female sculptors of the 60s."}}, {upsert: true} );
 //Artworks.update({title: "mit"}, {$addToSet: {pagetitle: "MIT Mom", visitdate: visitdate9, image1: "mit-mom.jpg", artworktitle1: 'MIT Killian Court', link1: 'https://www.technologyreview.com/s/522526/the-backstory-of-killian-court/', artist1: "William W. Bosworth", date1: "1916", landing: "The MIT architecture was a mother to me when I needed one."}}, {upsert: true} );
 //Artworks.update({title: "dome-of-rock-at-jerusalem"}, {$addToSet: {pagetitle: "Dome of Muhammad", visitdate: visitdate10, image1: "dome-muhammad.jpg", artworktitle1: 'The Dome of the Rock', link1: 'https://archnet.org/sites/2814/publications/3027', artist1: "First Commissioned by Umayyad Caliph Abd al-Malik", date1: "691 CE", landing: "Muhammad and I fall in love at the Dome of the Rock"}}, {upsert: true} );
+//Artworks.update({title: "yield-point-by-aki-sasamoto-at-the-kitchen"}, {$addToSet: {pagetitle: "Fault", visitdate: visitdate11, image1: "fault.jpg", artworktitle1: 'Yield Point', link1: 'http://thekitchen.org/event/aki-sasamoto-yield-point', artist1: "Aki Sasamoto", date1: "2017", landing: "Breakage shapes my life."}}, {upsert: true} );
+//Artworks.update({title: "antibodies-by-carol-rama-at-new-museum"}, {$addToSet: {pagetitle: "Quartered Her like a Little Bird", visitdate: visitdate12, image1: "antibody.jpg", artworktitle1: 'Antibodies', link1: 'http://www.newmuseum.org/exhibitions/view/carol-rama-antibodies', artist1: "Carol Rama", date1: "1940", landing: "Shoes like claws quartered me like a little bird."}}, {upsert: true} );
 
 
 //console.log(Artworks.findOne({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum-of-art"}));
