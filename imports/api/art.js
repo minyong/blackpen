@@ -18,7 +18,7 @@ export const Artworks = new Mongo.Collection('artworks');
 //visitdate9 = Date.parse("April 12, 2017");
 //visitdate10 = Date.parse("April 17, 2017");
 //visitdate11 = Date.parse("May 6, 2017");
-visitdate12 = Date.parse("August 17, 2017");
+//visitdate12 = Date.parse("August 17, 2017");
 
 //Artworks.update({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum"}, {$addToSet: {pagetitle: "Burnt Identity", visitdate: visitdate1, image1: "ici-on-creve.jpg", image2: "figure-of-mother-and-child.jpg", artworktitle1: 'Ici on crève (\"We\'re Dying Here\")', link1: 'https://www.brooklynmuseum.org/opencollection/objects/210261', artworktitle2: 'Figure of Mother and Child (Phemba)', link2: 'https://www.brooklynmuseum.org/opencollection/objects/2948', artist1: "Aimé Mpane", artist2: 'Kongo people (Yombe subgroup)', date1: "2006-2008", date2: "19th century", landing: "Brooklyn Museum's portraits from Africa ask me questions about my identity."}}, {upsert: true} );
 //Artworks.update({title: "menace-by-zeev-willy-neumann-at-saugerties-ny"}, {$addToSet: {pagetitle: "Home", visitdate: visitdate2, image1: "menace.jpg", artworktitle1: 'Menace', link1: 'http://zwneumann.tumblr.com/menace', artist1: "Ze'ev Willy Neumann", date1: "2014", landing: "There is no place like home"}}, {upsert: true} );
