@@ -20,7 +20,8 @@ export const Artworks = new Mongo.Collection('artworks');
 //visitdate11 = Date.parse("May 6, 2017");
 //visitdate12 = Date.parse("August 17, 2017");
 //visitdate13 = Date.parse("May 21, 2017");
-visitdate14 = Date.parse("September 4, 2017");
+//visitdate14 = Date.parse("September 4, 2017");
+visitdate15 = Date.parse("September 5, 2017");
 
 //Artworks.update({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum"}, {$addToSet: {pagetitle: "Burnt Identity", visitdate: visitdate1, image1: "ici-on-creve.jpg", image2: "figure-of-mother-and-child.jpg", artworktitle1: 'Ici on crève (\"We\'re Dying Here\")', link1: 'https://www.brooklynmuseum.org/opencollection/objects/210261', artworktitle2: 'Figure of Mother and Child (Phemba)', link2: 'https://www.brooklynmuseum.org/opencollection/objects/2948', artist1: "Aimé Mpane", artist2: 'Kongo people (Yombe subgroup)', date1: "2006-2008", date2: "19th century", landing: "Brooklyn Museum's portraits from Africa ask me questions about my identity."}}, {upsert: true} );
 //Artworks.update({title: "menace-by-zeev-willy-neumann-at-saugerties-ny"}, {$addToSet: {pagetitle: "Home", visitdate: visitdate2, image1: "menace.jpg", artworktitle1: 'Menace', link1: 'http://zwneumann.tumblr.com/menace', artist1: "Ze'ev Willy Neumann", date1: "2014", landing: "There is no place like home"}}, {upsert: true} );
@@ -36,5 +37,6 @@ visitdate14 = Date.parse("September 4, 2017");
 //Artworks.update({title: "antibodies-by-carol-rama-at-new-museum"}, {$addToSet: {pagetitle: "Quartered Her like a Little Bird", visitdate: visitdate12, image1: "antibody.jpg", artworktitle1: 'Antibodies', link1: 'http://www.newmuseum.org/exhibitions/view/carol-rama-antibodies', artist1: "Carol Rama", date1: "1940", landing: "Shoes like claws quartered me like a little bird."}}, {upsert: true} );
 //Artworks.update({title: "the-park-by-sam-anderson-at-sculpture-center"}, {$addToSet: {pagetitle: "Stork and I", visitdate: visitdate13, image1: "park.jpg", artworktitle1: 'The Park', link1: 'http://www.sculpture-center.org/exhibitionsExhibition.htm?id=121021', artist1: "Sam Anderson", date1: "2017", landing: "A woman looks into storks in a ghost town."}}, {upsert: true} );
 //Artworks.update({title: "unknown-by-unknown-at-governors-island-art-fair"}, {$addToSet: {pagetitle: "Art Unpictured", visitdate: visitdate14, image1: "unknown.jpg", artworktitle1: 'unknown', link1: 'http://www.4heads.org/exhibitors2014/', artist1: "unknown", landing: "I cannot forget an artwork unpictured."}}, {upsert: true} );
+//Artworks.update({title: "pretty-teacher-by-goya-at-philadelphia-museum-art"}, {$addToSet: {pagetitle: "Fly like a Witch", visitdate: visitdate15, image1: "goya.jpg", artworktitle1: 'Pretty Teacher', link1: 'https://www.philamuseum.org/collections/permanent/214962.html?mulR=1360774107|65', artist1: "Goya", landing: "I would die for a chance to fly like an old witch."}}, {upsert: true} );
 
 //console.log(Artworks.findOne({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum-of-art"}));
