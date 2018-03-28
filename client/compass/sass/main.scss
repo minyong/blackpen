@@ -154,6 +154,9 @@ audio {
 	}
 	img.oneimage {
 		max-width:200px;
+		@include breakpoint($phone) {
+		    max-width:100%;
+		}
 	}
 	img.twoimages {
 		max-width:175px;

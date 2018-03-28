@@ -264,17 +264,23 @@ audio::-webkit-media-controls-panel {
 .homecontainer img.oneimage {
   max-width: 200px;
 }
-/* line 158, compass/sass/main.scss */
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 155, compass/sass/main.scss */
+  .homecontainer img.oneimage {
+    max-width: 100%;
+  }
+}
+/* line 161, compass/sass/main.scss */
 .homecontainer img.twoimages {
   max-width: 175px;
 }
 @media (min-width: 620px) {
-  /* line 158, compass/sass/main.scss */
+  /* line 161, compass/sass/main.scss */
   .homecontainer img.twoimages {
     margin: 0 1rem 1.6rem 1rem;
   }
 }
-/* line 164, compass/sass/main.scss */
+/* line 167, compass/sass/main.scss */
 .homecontainer .inline-block {
   vertical-align: top;
   display: inline-block;
@@ -283,15 +289,15 @@ audio::-webkit-media-controls-panel {
   padding: 0;
   text-align: left;
 }
-/* line 169, compass/sass/main.scss */
+/* line 172, compass/sass/main.scss */
 .homecontainer .inline-block:first-of-type {
   padding: 0 1rem 0 0;
 }
-/* line 171, compass/sass/main.scss */
+/* line 174, compass/sass/main.scss */
 .homecontainer .inline-block:first-of-type p::after {
   display: none;
 }
-/* line 178, compass/sass/main.scss */
+/* line 181, compass/sass/main.scss */
 .homecontainer p::after {
   content: "+";
   border: 2px solid #999;
@@ -306,7 +312,7 @@ audio::-webkit-media-controls-panel {
   font-size: 20px;
 }
 
-/* line 190, compass/sass/main.scss */
+/* line 193, compass/sass/main.scss */
 .home-inline-block {
   display: inline-block;
   max-width: 472px;
@@ -314,19 +320,19 @@ audio::-webkit-media-controls-panel {
   padding: 1rem;
 }
 
-/* line 196, compass/sass/main.scss */
+/* line 199, compass/sass/main.scss */
 .desktop-inline-block {
   vertical-align: top;
   display: inline-block;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 196, compass/sass/main.scss */
+  /* line 199, compass/sass/main.scss */
   .desktop-inline-block {
     padding: 0 1rem 2rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 196, compass/sass/main.scss */
+  /* line 199, compass/sass/main.scss */
   .desktop-inline-block {
     display: block;
     width: 100%;
@@ -334,12 +340,12 @@ audio::-webkit-media-controls-panel {
   }
 }
 
-/* line 208, compass/sass/main.scss */
+/* line 211, compass/sass/main.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 211, compass/sass/main.scss */
+/* line 214, compass/sass/main.scss */
 h1 {
   margin: 4rem 0 1rem 0;
   text-align: left;
@@ -348,71 +354,71 @@ h1 {
   line-height: 130%;
 }
 
-/* line 218, compass/sass/main.scss */
+/* line 221, compass/sass/main.scss */
 .artworkpage {
   border-bottom: 4px solid #fffafa;
 }
-/* line 220, compass/sass/main.scss */
+/* line 223, compass/sass/main.scss */
 .artworkpage h1, .artworkpage audio {
   display: inline-block;
   margin: 1rem 2rem 1rem 0;
   vertical-align: top;
 }
 
-/* line 228, compass/sass/main.scss */
+/* line 231, compass/sass/main.scss */
 .homepage p, .homepage audio {
   display: inline-block;
   vertical-align: top;
   margin: 0 1rem 1rem 0;
 }
-/* line 233, compass/sass/main.scss */
+/* line 236, compass/sass/main.scss */
 .homepage p {
   font-family: 'Rajdhani', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 233, compass/sass/main.scss */
+  /* line 236, compass/sass/main.scss */
   .homepage p {
     margin: 0;
   }
 }
 
-/* line 241, compass/sass/main.scss */
+/* line 244, compass/sass/main.scss */
 footer {
   border-top: 8px solid #fffafa;
   padding: 1rem 0;
 }
-/* line 244, compass/sass/main.scss */
+/* line 247, compass/sass/main.scss */
 footer p {
   text-align: center !important;
 }
 
-/* line 249, compass/sass/main.scss */
+/* line 252, compass/sass/main.scss */
 .rsvp-by-senga-nengudi-at-studio-museum .homecontainer img.oneimage {
   max-width: 215px;
 }
 
-/* line 254, compass/sass/main.scss */
+/* line 257, compass/sass/main.scss */
 .dome-of-rock-at-jerusalem .homecontainer img.oneimage {
   max-width: 275px;
 }
 
-/* line 259, compass/sass/main.scss */
+/* line 262, compass/sass/main.scss */
 .pool-by-jihyeon-lee-at-society-of-illustrators .homecontainer img.oneimage {
   max-width: 370px;
 }
 
-/* line 264, compass/sass/main.scss */
+/* line 267, compass/sass/main.scss */
 .mit .homecontainer img.oneimage, .yield-point-by-aki-sasamoto-at-the-kitchen .homecontainer img.oneimage {
   max-width: 400px;
 }
 
-/* line 269, compass/sass/main.scss */
+/* line 272, compass/sass/main.scss */
 .mimesis-by-dawit-l-petros-at-center-for-photography-woodstock .homecontainer img.oneimage, .heat-maps-by-richard-mosse-at-jack-shainman-gallery .homecontainer img.oneimage, .magnetism-by-ahmed-mater-at-brooklyn-museum .homecontainer img.oneimage {
   max-width: 100%;
 }
 
-/* line 275, compass/sass/main.scss */
+/* line 278, compass/sass/main.scss */
 .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
   content: "";
   background: url("images/old-man-and-youth.jpg");
@@ -424,35 +430,35 @@ footer p {
   margin: 0 1rem 1.6rem 0;
 }
 @media (min-width: 0) and (max-width: 620px) {
-  /* line 275, compass/sass/main.scss */
+  /* line 278, compass/sass/main.scss */
   .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
     width: 180px;
   }
 }
 @media (min-width: 400px) and (max-width: 450px) {
-  /* line 275, compass/sass/main.scss */
+  /* line 278, compass/sass/main.scss */
   .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
     width: 166px;
     margin: 0 0 1.6rem 0;
   }
 }
 @media (min-width: 0) and (max-width: 400px) {
-  /* line 275, compass/sass/main.scss */
+  /* line 278, compass/sass/main.scss */
   .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer::before {
     width: 144px;
     margin: 0 0 1.6rem 0;
   }
 }
-/* line 296, compass/sass/main.scss */
+/* line 299, compass/sass/main.scss */
 .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art .homecontainer img.oneimage {
   display: none;
 }
 
-/* line 303, compass/sass/main.scss */
+/* line 306, compass/sass/main.scss */
 .artworkcontainer.mimesis-by-dawit-l-petros-at-center-for-photography-woodstock img, .artworkcontainer.pool-by-jihyeon-lee-at-society-of-illustrators img, .artworkcontainer.heat-maps-by-richard-mosse-at-jack-shainman-gallery img, .artworkcontainer.untitled-by-fred-sandback-at-dia-beacon img, .artworkcontainer.rsvp-by-senga-nengudi-at-studio-museum img {
   max-width: 100%;
 }
-/* line 308, compass/sass/main.scss */
+/* line 311, compass/sass/main.scss */
 .artworkcontainer.the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art img, .artworkcontainer.mit img {
   max-width: 600px;
 }
