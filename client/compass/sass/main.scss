@@ -113,10 +113,8 @@ main {
 }
 audio {
 	cursor:pointer;
-	border:1px solid #999;
 	padding: 0.3rem 0;
 	margin:.8rem 0;
-	height:3rem;
 	&::-webkit-media-controls-play-button, &::-webkit-media-controls-timeline, &::-webkit-media-controls-volume-slider {
 		cursor:pointer;
 	}
@@ -271,6 +269,11 @@ footer {
 .mimesis-by-dawit-l-petros-at-center-for-photography-woodstock, .heat-maps-by-richard-mosse-at-jack-shainman-gallery, .magnetism-by-ahmed-mater-at-brooklyn-museum {
 	.homecontainer img.oneimage {
 		max-width:100%;
+	}
+}
+.techpactia-tiein-quipano-ipan-milpa-alta-by-fernando-palma-rodriguez-at-moma-ps1 {
+	.homecontainer img.oneimage {
+		max-width: 400px;
 	}
 }
 .the-old-man-and-the-youth-by-riza-abbasi-at-metropolitan-museum-of-art {

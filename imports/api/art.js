@@ -26,7 +26,8 @@ export const Artworks = new Mongo.Collection('artworks');
 //visitdate17 = Date.parse("December 23, 2017");
 //visitdate18 = Date.parse("March 20, 2018");
 //visitdate19 = Date.parse("January 4, 2018");
-visitdate20 = Date.parse("April 22, 2018");
+//visitdate20 = Date.parse("April 22, 2018");
+visitdate21 = Date.parse("June 30, 2018");
 
 //Artworks.update({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum"}, {$addToSet: {pagetitle: "Burnt Identity", visitdate: visitdate1, image1: "ici-on-creve.jpg", image2: "figure-of-mother-and-child.jpg", artworktitle1: 'Ici on crève (\"We\'re Dying Here\")', link1: 'https://www.brooklynmuseum.org/opencollection/objects/210261', artworktitle2: 'Figure of Mother and Child (Phemba)', link2: 'https://www.brooklynmuseum.org/opencollection/objects/2948', artist1: "Aimé Mpane", artist2: 'Kongo people (Yombe subgroup)', date1: "2006-2008", date2: "19th century", landing: "Brooklyn Museum's portraits from Africa ask me questions about my identity."}}, {upsert: true} );
 //Artworks.update({title: "menace-by-zeev-willy-neumann-at-saugerties-ny"}, {$addToSet: {pagetitle: "Home", visitdate: visitdate2, image1: "menace.jpg", artworktitle1: 'Menace', link1: 'http://zwneumann.tumblr.com/menace', artist1: "Ze'ev Willy Neumann", date1: "2014", landing: "There is no place like home"}}, {upsert: true} );
@@ -48,5 +49,6 @@ visitdate20 = Date.parse("April 22, 2018");
 //Artworks.update({title: "paul-cadmus-and-jared-french-by-george-platt-lynes-at-whitney"}, {$addToSet: {pagetitle: "Touched by Dance", visitdate: visitdate18, image1: "george-platt-lynes.jpg", artworktitle1: 'Paul Cadmus and Jared French', link1: 'https://whitney.org/Exhibitions/NickMauss', artist1: "George Platt Lynes", date1: "1937", landing: "Dance comes into my life unexpectedly."}}, {upsert: true} );
 //Artworks.update({title: "black-and-white-by-man-ray-at-musee-orangerie"}, {$addToSet: {pagetitle: "Fluid Nobody", visitdate: visitdate19, image1: "man-ray.jpg", artworktitle1: 'Black and White', link1: 'http://www.musee-orangerie.fr/en/event/dada-africa-non-western-sources-and-influences', artist1: "Man Ray", date1: "1926", landing: "I am nobody with a fluid multilingual identity."}}, {upsert: true} );
 //Artworks.update({title: "massive-black-hole-in-the-dark-heart-of-our-milky-way-by-danh-vo-at-guggenheim"}, {$addToSet: {pagetitle: "An Ode", visitdate: visitdate20, image1: "danh-vo.jpg", artworktitle1: 'Massive Black Hole in the Dark Heart of Our Milky Way', link1: 'https://www.guggenheim.org/exhibition/danh-vo', artist1: "Danh Vo", date1: "2018", landing: "An ode to my pole teacher's beauty."}}, {upsert: true} );
+//Artworks.update({title: "techpactia-tiein-quipano-ipan-milpa-alta-by-fernando-palma-rodriguez-at-moma-ps1"}, {$addToSet: {pagetitle: "We Know", visitdate: visitdate21, image1: "horse.jpg", artworktitle1: 'Techpactia tiein quipano ipan Milpa Alta', link1: 'https://www.moma.org/calendar/exhibitions/4963?locale=en', artist1: "Fernando Palma Rodriguez", date1: "2004", landing: "Humor in art speaks to the viewer intimately."}}, {upsert: true} );
 
 //console.log(Artworks.findOne({title: "ici-on-creve-by-aime-mpane-at-brooklyn-museum-of-art"}));
